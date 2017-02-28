@@ -7,9 +7,9 @@
 	}
 }
 
-.q-index-page{
+.z-index-page{
 
-	.q-header-bar{
+	.z-header-bar{
 		width:100%;
 		overflow: hidden;
 		.pic-list{
@@ -26,186 +26,78 @@
 		}		
 		
 	}
-	.q-index-nav{
-		width:100%;
-		padding:10px 0;
-		background: #fff;
-		margin-top:0;
-		nav{
-			height:100%;
-			width:100%;
-			display: -webkit-box;
-			a{
-				display: block;
+	.z-index-subject{
+		.subjectList{
+			padding:10px 0;
+			&:nth-child(2){
+				background:#f4f4f4;
+			}
+			nav{
 				display: -webkit-box;
-				-webkit-box-flex:1;
-				-webkit-box-orient:vertical;
-				-webkit-box-pack:center;
-				-webkit-box-align:center;
-				width:0;
-				text-align: center;
-				span{
-					display: block;
-					color:#333;
-					font-size: 14px;
-					margin-top:4px;
-				}
-				img{
-					display: block;
-					width:30%;
-					
-				}
-			}
-
-		}
-	}
-	.q-index-activity{
-		width:100%;
-		padding-bottom: 10px;
-		#activity{
-			width:100%;
-			.film-list{
-				position: static;
-				aside{
-					h4{
-						font-size: 12px;
-					    color: #fff;
-					    position: absolute;
-					    top: 0;
-					    z-index: 100;
-					    width: 100%;
-					    text-align: center;
-					    text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-					    line-height: 40px;
-					    margin: 0;
-					    height: 100px;
-					    background: linear-gradient(180deg, #000000, rgba(0, 0, 0, 0));
-					}
-					button{
-						width: 100%;
-					    background: #fff;
-					    color: #fff;
-					    background: #000;
-					    border: 0;
-					    font-size: 12px;
-					    margin-bottom: 5px;
-					    padding: 0;
-					    height: 30px;
-					}
-				}
-			}
-			img{
-				display: block;
 				width:100%;
-			}
-		}
-		
-	}
-	.q-index-future{
-		padding-right: 0;
-		padding-left: 0;
-		padding-bottom: 0;
-		
-		.starList{
-			width:100%;
-			display: -webkit-box;
-			dl{
-				width:50%;
-				margin-bottom:0px;
-				box-sizing:border-box;
-				&:nth-child(odd){
-					padding-right:0.5px;
-				}
-				&:nth-child(event){
-					padding-left:0.5px;
-				}
-				dt{
+				height:100%;
+				display:-webkit-box;
+				-webkit-box-align:center;
+				-webkit-box-pack:center;
+				a{
+					display: block;
+					display: -webkit-box;
+					-webkit-box-flex:1;
+					-webkit-box-orient:vertical;
+					-webkit-box-align:center;
+					text-align: center;
+					
 					img{
 						display: block;
-						width:100%;
+						width:50%;
 					}
-				}
-				dd{
-					hgroup{
-						margin-top:10px;
-						h3{
-							margin-bottom: 10px;
-							font-size: 14px;
-							line-height: 1.2;
-							color: #000;
-							text-align: center;
-						}
-						h4{
-							line-height: 1.2;
-							font-size: 12px;
-							color: #ccc;
-							text-align: center;
-							padding-bottom: 10px;
-						}
+					span{
+						display: block;
+						margin-top:5px;
+						color:#747474;
+						font-size: 14px;
 					}
 				}
 			}
 		}
 	}
-
-	.q-index-telecast{
-		.telecastList{
-			
-			.video{
-				position:relative;
-				border-bottom: 10px solid #eee;
-				&:last-child{
-					border:none;
-				}
-				.c{
+	.z-index-online{
+		.online-title{
+			padding:10px;
+			box-sizing:border-box;
+			font-size: 16px;
+			text-align: center;
+			color:#424242;
+			margin-bottom: 0;
+		}
+		.onlineList{
+			display: -webkit-box;
+			-webkit-box-pack:center;
+			a{
+				display: block;
+				padding:20px 40px;
+				box-sizing:border-box;
+				border-radius: 40px;
+				margin-top:5px;
+				span{
 					display: block;
-					width:100%;
+					text-align: center;
 				}
-				dl{
-					position: absolute;
-					top:10px;
-					left:10px;
-					display: -webkit-box;
-					dt{
-						width:45px;
-						height:45px;
-						margin-right: 10px;
-						img{
-							display: block;
-							width:100%;
-							height:100%;
-						}
-					}
-					dd{
-						h3{
-							font-size: 14px;
-							color: #fff;
-						}
-						h4{
-							font-size: 12px;
-							color:#fccd56;
-							margin-top:5px;
-						}
+				&:nth-child(1){
+					background: #fef0c9;
+					margin-right:7px;
+					span{
+						color:#4e4228;
 					}
 				}
-				.aside{
-					display: -webkit-box;
-					padding:10px;
-					box-sizing:border-box;
-					.number-men{
-						-webkit-box-flex:1;
-					}
-					a{
-						color:#000;
-						margin-left:10px;
-						i{
-							margin-right:5px;
-						}
+				&:nth-child(2){
+					background: #e2f5fc;
+					margin-left:7px;
+					span{
+						color:#4d5c61;
 					}
 				}
-			
 			}
-			
 		}
 	}
 	
