@@ -8,7 +8,7 @@
 }
 
 .z-index-page{
-
+	padding-bottom:44px;
 	.z-header-bar{
 		width:100%;
 		overflow: hidden;
@@ -73,28 +73,41 @@
 		.onlineList{
 			display: -webkit-box;
 			-webkit-box-pack:center;
-			a{
-				display: block;
-				padding:20px 40px;
+			padding:0 15px;
+			box-sizing:border-box;
+			.video{
+				width:50%;
 				box-sizing:border-box;
-				border-radius: 40px;
-				margin-top:5px;
-				span{
-					display: block;
-					text-align: center;
-				}
 				&:nth-child(1){
-					background: #fef0c9;
-					margin-right:7px;
-					span{
-						color:#4e4228;
+					padding-right:7px;
+					a{
+						background: #fef0c9;
+						margin-right:7px;
+						span{
+							color:#4e4228;
+						}
 					}
 				}
 				&:nth-child(2){
-					background: #e2f5fc;
-					margin-left:7px;
+					padding-left:7px;
+					a{
+						background: #e2f5fc;
+						margin-left:7px;
+						span{
+							color:#4d5c61;
+						}
+					}
+				}
+				a{
+					width:100%;
+					display: block;
+					box-sizing:border-box;
+					border-radius: 40px;
+					margin-top:5px;
+					padding:20px 0;
 					span{
-						color:#4d5c61;
+						display: block;
+						text-align: center;
 					}
 				}
 			}
