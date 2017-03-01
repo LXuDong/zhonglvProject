@@ -198,3 +198,65 @@
 .z-question-tab .subjectList ul li a.on span {
   color: #fff;
 }
+.form {
+  height: 72px;
+  width: 100%;
+  background: #f4f4f4;
+  box-sizing: border-box;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #EFEFEF;
+  padding: 16px 5px;
+}
+.form .form-inp {
+  display: -webkit-flex;
+  height: 35px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin: 0 5%;
+}
+.form .form-inp input {
+  -webkit-flex: 1;
+  height: 33px;
+  border-radius: 20px;
+  padding-left: 10px;
+}
+.form .form-inp i {
+  display: block;
+  width: 35px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 22px;
+}
+.judicial {
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  font-size: 15px;
+}
+.teach {
+  font-size: 14px;
+}
+.teach li p {
+  line-height: 30px;
+  height: 30px;
+  background: #f4f4f4;
+  border-bottom: 1px solid #EFEFEF;
+  padding: 0 10px;
+  margin: 0px;
+}
+.teach li p i {
+  float: right;
+}
+.l-ola {
+  background: #fff;
+}
+.l-ola li {
+  border: none;
+  padding: 0 10px 0 20px;
+  background: #fff;
+  line-height: 25px;
+}
+.l-ola li span {
+  float: right;
+}
