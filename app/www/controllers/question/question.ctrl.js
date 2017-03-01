@@ -1,7 +1,7 @@
-angular.module( "lotour.app").controller("questionCtrl",function( $scope,$http,httpServer ){
+angular.module( "lotour.app").controller("questionCtrl",function( $scope,httpServer){
 
 	httpServer.get("Question/GetQuestionCategory",{
-		user_id:2
+		user_id:1
 	},function(data){
 		console.log(data)
 	},function(err){
