@@ -28,7 +28,42 @@ angular.module( "lotour.app").config(function( $stateProvider,$urlRouterProvider
 		controller : "contsCtrl"
 	} )
 	
-
+	.state( "personal",{
+		url : "/personal",
+		templateUrl : "controllers/personal/personal.html",
+		controller : "personalCtrl"
+	} )
+	.state( "account",{
+		url : "/personal/account",
+		templateUrl : "controllers/personal/account/account.html",
+		controller : "accountCtrl"
+	} )
+	.state( "mynotes",{
+		url : "/personal/mynotes",
+		templateUrl : "controllers/personal/mynotes/mynotes.html",
+		controller : "mynotesCtrl"
+	} )
+	.state( "order",{
+		url : "/personal/order",
+		templateUrl : "controllers/personal/order/order.html",
+		controller : "orderCtrl"
+	} )
+	.state( "comment",{
+		url : "/personal/comment",
+		templateUrl : "controllers/personal/comment/comment.html",
+		controller : "commentCtrl"
+	} )
+	.state( "concrete",{
+		url : "/personal/concrete",
+		templateUrl : "controllers/personal/concrete/concrete.html",
+		controller : "concreteCtrl"
+	} )
+	
+	.state( "concretes",{
+		url : "/personal/concrete/concretes",
+		templateUrl : "controllers/personal/concrete/concretes/concretes.html",
+		controller : "concretesCtrl"
+	} )
 
 	
 
