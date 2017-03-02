@@ -678,3 +678,54 @@
 .comment-foot a i {
   font-size: 16px;
 }
+.kecheng-wrap {
+  overflow-y: auto;
+}
+nav.kechengnav {
+  display: -webkit-box;
+  padding-top: 34px;
+}
+nav.kechengnav a {
+  z-index: 9999;
+  display: block;
+  -webkit-box-flex: 1;
+  -webkit-box-sizing: border-box;
+  padding: 15px 0;
+}
+nav.kechengnav a span {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 60%;
+  border: 1px solid orange;
+  border-radius: 30px;
+  padding: 3px 5px;
+}
+.list .item-icon-right h2 {
+  width: 66%;
+}
+.list .item-icon-right .icon {
+  color: orange;
+  font-size: 18px;
+}
+.kc_detail img {
+  width: 100%;
+}
+.kc_detail dd .title {
+  height: 50px;
+  line-height: 50px;
+}
+.kc_detail dd .title span.name {
+  float: left;
+}
+.kc_detail dd .title span.price {
+  float: right;
+}
+.kc_detail dd .title span.price i {
+  background: orange;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  text-align: center;
+}
