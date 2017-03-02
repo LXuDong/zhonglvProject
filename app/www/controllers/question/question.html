@@ -3,128 +3,39 @@
 	
 	<ion-content scroll="false">
             <ion-slide-box slide-tabs-scrollable="false"  show-pager="false" ion-slide-tabs>
-                <ion-slide ion-slide-tab-label="司考">
+                <ion-slide ng-repeat="item in oneTitle" ion-slide-tab-label="{{item.title}}">
                     <div class="z-question-tab">
                         <section class="subjectList">
                             <ul>
-                                <li>
-                                    <a href="javascript:;" class="on">
-                                        <span>历年</span>
-                                        <span>真题</span>
+                                <li ng-repeat="obj in item.two">
+                                    <a href="javascript:;" data-id="{{obj.id}}" ng-click="getId($index)">
+                                        {{obj.title}}
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="javascript:;">
-                                        <span>分科</span>
-                                        <span>真题</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;">
-                                        <span>模拟</span>
-                                        <span>试卷</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;">
-                                        <span>题海</span>
-                                        <span>实战</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;">
-                                        <span>主观题</span>
-                                        <span>实训</span>
-                                    </a>
-                                </li>
-                                  
+                                
                             </ul>
                         </section>
                         
-                    </div>
-                </ion-slide>
-                <ion-slide ion-slide-tab-label="法硕">
-                    <div class="z-question-tab">
-                        <section class="subjectList">
-                            <ul>
-                                <li>
-                                    <a href="javascript:;" class="on">
-                                        <span>分科</span>
-                                        <span>真题</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;">
-                                        <span>模拟</span>
-                                        <span>试卷</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;">
-                                        <span>题海</span>
-                                        <span>实战</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;">
-                                        <span>主观题</span>
-                                        <span>实训</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </section>
                     
+                        <ion-scroll>
+                            <div class="questionList" id="questionList">
+                                <ul>
+                                    <li ng-repeat="item in questionList">
+                                        <time>· {{item.title}}</time>
+                                        <p>
+                                            <b>题数</b>
+                                            <span class="count">{{item.count}}</span>
+                                            <span class="exam_time">{{item.exam_time}}</span>
+                                            <i class="ion-chevron-right"></i>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </ion-scroll>
                     </div>
                 </ion-slide>
-                <ion-slide ion-slide-tab-label="考研英语">
-                    <div class="z-question-tab">
-                        <section class="subjectList">
-                            <ul>
-                                
-                                <li>
-                                    <a href="javascript:;" class="on">
-                                        <span>模拟</span>
-                                        <span>试卷</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;">
-                                        <span>题海</span>
-                                        <span>实战</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;">
-                                        <span>主观题</span>
-                                        <span>实训</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </section>
-                    
-                    </div>
-                </ion-slide>
-                <ion-slide ion-slide-tab-label="考研政治">
-                    <div class="z-question-tab">
-                        <section class="subjectList">
-                            <ul>
-                                <li>
-                                    <a href="javascript:;" class="on">
-                                        <span>题海</span>
-                                        <span>实战</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:;">
-                                        <span>主观题</span>
-                                        <span>实训</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </section>
-                    
-                    </div>
-                </ion-slide>
+                
             </ion-slide-box>
     </ion-content>
 	
